@@ -114,25 +114,61 @@ export default function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
-          <button className="bg-black text-white px-6 py-3 rounded-lg font-syne font-medium hover:bg-gray-900 transition">
+          {/* Scroll to Services section */}
+          <button
+            onClick={() => {
+              const servicesSection = document.getElementById("services");
+              if (servicesSection) {
+                servicesSection.scrollIntoView({ behavior: "smooth" });
+              }
+            }}
+            className="bg-black text-white px-6 py-3 rounded-lg font-syne font-medium hover:bg-gray-900 transition"
+          >
             Explore Our Services
           </button>
-          <button className="border-2 border-[#FFA500] text-[#FFA500] px-6 py-3 rounded-lg font-syne font-medium hover:bg-orange-50 transition">
+
+          {/* Redirect to Google Form */}
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSc8wWXgLVX5Aw4NvPiGz7tDlRyT6-AMeHNuQLTndbNTeSNLGg/viewform?usp=sharing&ouid=106538584809014552424"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="border-2 border-[#FFA500] text-[#FFA500] px-6 py-3 rounded-lg font-syne font-medium hover:bg-orange-50 transition text-center"
+          >
             Book Service
-          </button>
+          </a>
         </div>
       </div>
 
       {/* RIGHT COLUMN — BENTO GRID */}
       <div ref={gridRef} className="w-full lg:w-[40%] mt-12 lg:mt-0 space-y-4">
         <div className="grid grid-cols-[55%_41%] gap-4">
-          <img src={hero1} alt="Creative work" className="w-full h-[150px] rounded-xl object-cover" />
-          <img src={hero2} alt="Digital art" className="w-full h-[150px] rounded-xl object-cover" />
+          <img
+            src={hero1}
+            alt="Creative work"
+            className="w-full h-[150px] rounded-xl object-cover"
+          />
+          <img
+            src={hero2}
+            alt="Digital art"
+            className="w-full h-[150px] rounded-xl object-cover"
+          />
         </div>
-        <img src={hero3} alt="Teamwork" className="w-full h-[150px] rounded-xl object-cover" />
+        <img
+          src={hero3}
+          alt="Teamwork"
+          className="w-full h-[150px] rounded-xl object-cover"
+        />
         <div className="grid grid-cols-[20%_76%] gap-4">
-          <img src={hero4} alt="Brand illustration" className="w-full h-[150px] rounded-xl object-cover" />
-          <img src={hero5} alt="Modern design" className="w-full h-[150px] rounded-xl object-cover" />
+          <img
+            src={hero4}
+            alt="Brand illustration"
+            className="w-full h-[150px] rounded-xl object-cover"
+          />
+          <img
+            src={hero5}
+            alt="Modern design"
+            className="w-full h-[150px] rounded-xl object-cover"
+          />
         </div>
       </div>
 
@@ -151,7 +187,12 @@ export default function Hero() {
             viewBox="0 0 24 24"
             stroke="currentColor"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth={2}
+              d="M19 9l-7 7-7-7"
+            />
           </svg>
         </button>
       </div>
