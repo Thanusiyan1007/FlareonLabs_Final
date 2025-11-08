@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+    --font-syne: 'Syne', sans-serif;
+    --font-poppins: 'Poppins', sans-serif;
+}
+
+@keyframes bounce-soft {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(6px); }
+}
+.animate-bounce-soft {
+  animation: bounce-soft 2s infinite;
+}
