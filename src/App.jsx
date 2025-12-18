@@ -11,6 +11,7 @@ import Pricing from "./components/Pricing";
 import ContactAndFooter from "./components/ContactAndFooter";
 import Chatbot from "./components/Chatbot";
 import LoaderCircle from "./components/LoaderCircle.jsx";
+import Snowfall from "react-snowfall";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -25,8 +26,10 @@ export default function App() {
   const pricingRef = useRef(null);
   const contactRef = useRef(null);
 
+  // Check if current month is December
+  const isDecember = new Date().getMonth() === 11; // 0 = Jan, 11 = Dec
+
   useEffect(() => {
-    // simulate loading (or wait for images/assets)
     const timer = setTimeout(() => setLoading(false), 1500);
     return () => clearTimeout(timer);
   }, []);
@@ -49,9 +52,17 @@ export default function App() {
 
   return (
     <>
-      {loading && <LoaderCircle />} {/* Show CircleBadge as loader */}
+      {loading && <LoaderCircle />}
       {!loading && (
-        <div ref={mainRef} className="bg-transparent">
+        <div ref={mainRef} className="bg-transparent relative">
+          {/* Snowfall overlay only in December */}
+          {isDecember && (
+            <Snowfall
+              snowflakeCount={100}
+              style={{ zIndex: 50, position: "fixed", top: 0, left: 0 }}
+            />
+          )}
+
           <Navbar />
           <section id="home">
             <div ref={heroRef}><Hero /></div>
@@ -61,7 +72,8 @@ export default function App() {
             <div ref={pricingRef}><Pricing /></div>
             <div ref={contactRef}><ContactAndFooter /></div>
           </section>
-          <div style={{ position: "fixed", bottom: "20px", right: "20px", zIndex: 50 }}>
+
+          <div className="fixed bottom-5 right-5 z-50">
             <Chatbot />
           </div>
         </div>
