@@ -203,7 +203,7 @@ export default function ContactAndFooter() {
 
               {/* WhatsApp Click */}
               <a
-                href="https://wa.me/94757050289"
+                href="https://wa.me/94717050289"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 font-poppins text-gray-300 hover:text-[#FFA500] transition-all duration-300 text-sm font-medium"
