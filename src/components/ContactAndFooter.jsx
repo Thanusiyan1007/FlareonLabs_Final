@@ -209,7 +209,7 @@ export default function ContactAndFooter() {
                 className="inline-flex items-center gap-2 font-poppins text-gray-300 hover:text-[#FFA500] transition-all duration-300 text-sm font-medium"
               >
                 <PhoneIcon className="w-4 h-4" />
-                94717050289
+                +94 71 705 0289
               </a>
             </div>
 
