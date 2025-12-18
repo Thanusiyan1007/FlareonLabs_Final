@@ -113,6 +113,7 @@ export default function OurWorksStatic() {
                   <img
                     src={filteredProjects[currentIndex].image}
                     alt={filteredProjects[currentIndex].title}
+                    title={filteredProjects[currentIndex].imgTitle || filteredProjects[currentIndex].title}
                     className="w-full h-[240px] sm:h-[300px] object-cover transition-transform duration-500 hover:scale-105"
                   />
                 </div>

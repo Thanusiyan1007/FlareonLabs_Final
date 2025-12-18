@@ -18,22 +18,25 @@ export default function Services() {
     {
       title: "Branding & Identity",
       img: brandingImg,
-      desc: `Your brand is more than just a logo — it's your story.
-      We help you design a visual identity that communicates your purpose and connects with your audience.`,
+      imgAlt: "FlareonLabs Branding & Identity Visual",
+      imgTitle: "Branding & Identity",
+      desc: `Your brand is more than just a logo — it's your story. We design a visual identity that communicates your purpose and connects with your audience.`,
       tags: ["Logo Design", "Color Strategy", "Typography", "Brand Guidelines"],
     },
     {
       title: "Web Design & Development",
       img: webImg,
-      desc: `We build sleek, modern, and responsive websites using React
-      & Tailwind CSS. Our designs are aesthetic, functional, and lightning‑fast.`,
+      imgAlt: "FlareonLabs Web Design & Development",
+      imgTitle: "Web Design & Development",
+      desc: `We build sleek, modern, and responsive websites using React & Tailwind CSS. Designs are aesthetic, functional, and lightning‑fast.`,
       tags: ["UI/UX Design", "Development", "Tailwind CSS", "API Integration"],
     },
     {
       title: "Digital Strategy",
       img: strategyImg,
-      desc: `We craft marketing strategies powered by creativity and data,
-      keeping your brand visible, consistent, and ahead of competition.`,
+      imgAlt: "FlareonLabs Digital Strategy Services",
+      imgTitle: "Digital Strategy",
+      desc: `We craft marketing strategies powered by creativity and data, keeping your brand visible, consistent, and ahead of competition.`,
       tags: ["Content Creation", "SM Management", "Advertising", "Consulting"],
     },
   ];

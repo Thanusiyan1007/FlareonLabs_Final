@@ -77,6 +77,7 @@ export default function Navbar() {
           <img
             src={logo}
             alt="FlareonLabs Logo"
+            title="FlareonLabs Logo"
             className="h-8 w-auto sm:h-10 cursor-pointer"
             onClick={(e) => handleSmoothScroll(e, "#home")}
           />

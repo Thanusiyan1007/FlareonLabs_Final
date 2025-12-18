@@ -90,6 +90,7 @@ function CircleBadge({
       <img
         src={imageSrc}
         alt="Center Icon"
+        title="Center Icon"
         className="absolute top-1/2 left-1/2 w-10 h-10 md:w-12 md:h-12 object-contain transform -translate-x-1/2 -translate-y-1/2"
       />
     </div>
@@ -253,7 +254,7 @@ export default function About() {
         <div className="rounded-2xl border border-gray-300 p-6 text-center md:text-left bg-white/40 backdrop-blur-sm">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-3 mb-4">
             <div className="w-12 h-12 rounded-lg border border-gray-200 flex items-center justify-center">
-              <img src={icon1} alt="Vision Icon" className="w-6 h-6" />
+              <img src={icon1} alt="Vision Icon" title="Vision Icon" className="w-6 h-6" />
             </div>
             <h3 className="text-lg md:text-xl font-semibold mt-2 md:mt-0">
               Our Vision
@@ -270,7 +271,7 @@ export default function About() {
         <div className="rounded-2xl border border-gray-300 p-6 text-center md:text-left bg-white/40 backdrop-blur-sm">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-3 mb-4">
             <div className="w-12 h-12 rounded-lg border border-gray-200 flex items-center justify-center">
-              <img src={icon2} alt="Mission Icon" className="w-6 h-6" />
+              <img src={icon2} alt="Mission Icon" title="Mission Icon" className="w-6 h-6" />
             </div>
             <h3 className="text-lg md:text-xl font-semibold mt-2 md:mt-0">
               Our Mission
@@ -287,7 +288,7 @@ export default function About() {
         <div className="rounded-2xl border border-gray-300 p-6 text-center md:text-left bg-white/40 backdrop-blur-sm">
           <div className="flex flex-col md:flex-row items-center md:items-start gap-3 mb-4">
             <div className="w-12 h-12 rounded-lg border border-gray-200 flex items-center justify-center">
-              <img src={icon3} alt="Promise Icon" className="w-6 h-6" />
+              <img src={icon3} alt="Promise Icon" title="Promise Icon" className="w-6 h-6" />
             </div>
             <h3 className="text-lg md:text-xl font-semibold mt-2 md:mt-0">
               Our Promise

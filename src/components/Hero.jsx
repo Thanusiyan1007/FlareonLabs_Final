@@ -145,28 +145,33 @@ export default function Hero() {
           <img
             src={hero1}
             alt="Creative work"
+            title="Creative work"
             className="w-full h-[150px] rounded-xl object-cover"
           />
           <img
             src={hero2}
             alt="Digital art"
+            title="Digital art"
             className="w-full h-[150px] rounded-xl object-cover"
           />
         </div>
         <img
           src={hero3}
           alt="Teamwork"
+          title="Teamwork"
           className="w-full h-[150px] rounded-xl object-cover"
         />
         <div className="grid grid-cols-[20%_76%] gap-4">
           <img
             src={hero4}
             alt="Brand illustration"
+            title="Brand illustration"
             className="w-full h-[150px] rounded-xl object-cover"
           />
           <img
             src={hero5}
             alt="Modern design"
+            title="Modern design"
             className="w-full h-[150px] rounded-xl object-cover"
           />
         </div>

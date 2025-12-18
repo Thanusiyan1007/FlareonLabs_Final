@@ -48,6 +48,7 @@ export default function LoaderCircle({ size = 110, text = "100% · Unique Design
         <img
           src={logoFrame}
           alt="Center Icon"
+          title="Center Icon"
           className="absolute top-1/2 left-1/2 w-10 h-10 md:w-12 md:h-12 object-contain transform -translate-x-1/2 -translate-y-1/2"
         />
       </div>

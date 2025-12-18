@@ -86,7 +86,7 @@ export default function Chatbot() {
         aria-label="Open chat"
         className="relative w-16 h-16 bg-gradient-to-r from-[#FFA500] to-red-500 rounded-full text-white shadow-lg flex items-center justify-center hover:scale-110 transition-transform"
       >
-        <img src={logo} alt="logo" className="w-8 h-8" />
+        <img src={logo} alt="logo" title='logo' className="w-8 h-8" />
         <span className="absolute inset-0 bg-[#FFA500] rounded-full animate-ping opacity-20"></span>
       </button>
     </div>
@@ -97,7 +97,7 @@ export default function Chatbot() {
       {/* Header */}
       <div className="bg-gradient-to-r from-[#FFA500] to-red-500 text-white p-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
-          <img src={logo} alt="logo" className="w-6 h-6" />
+          <img src={logo} alt="logo" title='logo' className="w-6 h-6" />
           <div>
             <h1 className="font-bold leading-tight">FlareonBot</h1>
             <p className="text-xs text-orange-100">Online • Ready to help</p>
